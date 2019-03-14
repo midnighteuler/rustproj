@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  rustproj:
+    build: .
+    stdin_open: true
+    tty: true
+    command: /bin/bash
+    volumes:
+      - .:/rustproj
+    
